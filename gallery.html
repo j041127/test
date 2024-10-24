@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jasper Morrison - 작품 갤러리</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            padding-right: 30px;
+            padding-left: 25px;
+            background-color: #f8f8f8;
+            border-bottom: 1px solid #ccc;
+        }
+        .logo {
+            font-size: 26px;
+            font-weight: bold;
+            text-decoration: none;
+            color: black;
+        }
+        .logo a{
+            text-decoration: none;
+            color: black;
+        }
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-size: 20px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .sidebar {
+            width: 200px;
+            background-color: #f4f4f4;
+            padding: 15px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .sidebar h2 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        .sidebar a {
+            display: block;
+            padding: 10px;
+            color: #333;
+            text-decoration: none;
+            margin-bottom: 10px;
+            border-radius: 4px;
+        }
+        .sidebar a:hover {
+            background-color: #ddd;
+        }
+        .gallery-container {
+            flex: 1;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+        .category {
+            margin-bottom: 40px;
+        }
+        .category h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 50px;
+        }
+        .gallery-item {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        .gallery-item p {
+            padding: 10px;
+            margin: 0;
+            color: #666;
+            font-size: 15px;
+        }
+        h1{
+            text-align: center;
+        }
+        footer {
+            
+           
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 30px; 
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            
+            margin: 0 auto;
+            padding: 0 0px;
+            padding-top: 0;
+            border-top: solid 1px gray;
+        }
+
+        .social-links {
+            margin-top: 0px;
+        }
+
+        .social-links a {
+            color: #6c6c6c;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .social-links a:hover {
+            text-decoration: underline;
+            color: #333;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo"><a href="index.html">Jasper Morrison</a></div>
+    <nav>
+        <a href="Profile.html">Profile</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="design.html">Design</a>
+        <a href="project.html">Project</a>
+        <a href="book.html">Book</a>
+    </nav>
+</header>
+ <h1>Jasper Morrison 작품 갤러리</h1>
+<div class="sidebar">
+    <h2>category</h2>
+    <a href="#chairs">Chairs</a>
+    <a href="#lights">Lights</a>
+    <a href="#objects">objects</a>
+</div>
+
+<div class="gallery-container">
+    <div class="category" id="chairs">
+        <h2>Chairs</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="jm-nikari-archetyp-1.jpg" alt="Archetyp"> 
+                <p>An upholstered chair made of ash, oak or birch, produced in lobby and lounge versions. <br>
+
+                </div>
+            <div class="gallery-item">
+                <img src="jm-projects-chairs-isokon-isolounge.jpg"> 
+                <p>Moulded plywood and Isokon’s skill in producing it are 
+                    the key technical factors that determined the chair.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="00-projects-chairs-vitra-evo-c.jpg" > 
+                <p>The EVO-C began with a question from one of Vitra’s product developing engineers: could we achieve a one-piece moulded cantilever chair with two front legs, in other words could we go a step further 
+                    than the Panton chair and design a two-legged version as a single plastic moulding?</p>
+            </div>
+            <div class="gallery-item">
+                <img src="00-projects_chairs_mattiazzi_fionda_01.jpg" >
+                <p>A lounge and dining chair with accompanying table. 
+                    The ash frames are stackable. The canvas slings come in a range of colours.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="00-projects_chairs_vitra_monopod_01.jpg" >
+                <p>A leather-upholstered low chair.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="00-projects_chairs_cappellini_low_pad_01.jpg" > 
+                <p>A moulded-leather or fabric upholstered lounge chair with a satin stainless-steel base.</p>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="category" id="lights">
+        <h2>Lights</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="00-projects_lighting_flos_superloon_01.jpg" > 
+                <p>An adjustable LED panel light, available in black, white and chrome.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="00-projects_lighting_flos_globall.jpg" > 
+                <p>An extensive family of lights with hand-blown opal glass diffusers.
+                     There are models for the wall, the ceiling, the floor and for tables.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="jm-projects-lighting-o-light.jpg" > 
+                <p>Wall and ceiling lights consisting of spun aluminium with a painted or 
+                    anodised finish and a thermoplastic shade. Produced in two sizes.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="jm-projects-lighting-flos-oplight.jpg" > 
+                <p>A wall-mounted uplight, in four finishes.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="00-projects_lighting_flos_smithfield_01.jpg" > 
+                <p>A pendant light in powder-coated aluminium with a plastic diffuser.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="00-projects_lighting_asano_porcini_family_01.jpg" > 
+                <p>A family of three sizes of paper lantern, sold in flat boxes. This was part of a project to revive the contemporary design of this Japanese tradition,
+                     originally conceived by Isamu Noguchi as Akari.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="category" id="objects">
+        <h2>Objects</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="jm_projects_accessories_clocks_1.jpg"> 
+                <p>The dial of the clock was designed to imitate a sports hall or swimming pool clock, 
+                    which was probably a mistake although I still like it.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="jm-projects-electronics-canon-camera-front.jpg" > 
+                <p>A concept product. Pressed aluminium body, synthetic rubber moulded grips,
+                     lens surround and control button.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="00-projects_kitchenware_oigen_palma_06.jpg" > 
+                <p>A range of cast-iron table and cookware.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="00-projects_infrastructure_ideal_standard_morrison_range_01.jpg" > 
+                <p>An extensive range of sanitary and brassware with accompanying furniture and 
+                    accessories.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="projects_infrastructure_fsb_1144_handle_03.jpg" > 
+                <p>A door handle made of aluminium and finished with clear anodising. 
+                    Also produced in stainless steel.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="00-projects_vitra_hexagonal_container.jpg" > 
+                <p>A range of ceramic desk organisers available in three colours.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="footer-container">
+        <p>&copy; 2024 Jasper Morrison. Ltd.</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/jasper.morrison/" target="_blank">Instagram</a>
+            <a href="https://m.facebook.com/p/Jasper-Morrison-100067862897837/" target="_blank">Facebook</a>
+            <a href="https://twitter.com/dezeen/status/729008656616824834" target="_blank">Twitter</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
